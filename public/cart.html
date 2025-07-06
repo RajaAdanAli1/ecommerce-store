@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - EcommShop</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <h1><a href="index.html"><i class="fas fa-shopping-bag"></i> EcommShop</a></h1>
+            </div>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="index.html#categories" class="nav-link">Categories</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <div class="user-actions">
+                    <button id="loginBtn" class="btn btn-outline">Login</button>
+                    <div id="userMenu" class="user-menu" style="display: none;">
+                        <button id="userMenuBtn" class="user-menu-btn">
+                            <i class="fas fa-user"></i>
+                            <span id="userName"></span>
+                        </button>
+                        <div class="user-dropdown">
+                            <a href="#" id="profileLink">Profile</a>
+                            <a href="#" id="ordersLink">Orders</a>
+                            <a href="#" id="logoutBtn">Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="cart-header">
+                <h1><i class="fas fa-shopping-cart"></i> Shopping Cart</h1>
+                <a href="index.html" class="continue-shopping">
+                    <i class="fas fa-arrow-left"></i> Continue Shopping
+                </a>
+            </div>
+
+            <div class="cart-content">
+                <div class="cart-items" id="cartItems">
+                    <!-- Cart items will be loaded here -->
+                </div>
+
+                <div class="cart-summary">
+                    <div class="summary-card">
+                        <h3>Order Summary</h3>
+                        <div class="summary-row">
+                            <span>Subtotal:</span>
+                            <span id="subtotal">$0.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Shipping:</span>
+                            <span id="shipping">$0.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Tax:</span>
+                            <span id="tax">$0.00</span>
+                        </div>
+                        <hr>
+                        <div class="summary-row total">
+                            <span>Total:</span>
+                            <span id="total">$0.00</span>
+                        </div>
+                        <button id="checkoutBtn" class="btn btn-primary btn-full">
+                            Proceed to Checkout
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="empty-cart" id="emptyCart" style="display: none;">
+                <div class="empty-cart-content">
+                    <i class="fas fa-shopping-cart"></i>
+                    <h2>Your cart is empty</h2>
+                    <p>Add some products to your cart to get started</p>
+                    <a href="index.html" class="btn btn-primary">Start Shopping</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>EcommShop</h3>
+                    <p>Your trusted online shopping destination</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 EcommShop. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="loadingSpinner" class="loading-spinner">
+        <div class="spinner"></div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
