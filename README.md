@@ -19,9 +19,6 @@ A full-featured e-commerce web application built with Express.js, MongoDB, and v
 ## 🌟 Live Demo
 *Add your live demo link here*
 
-## 📸 Screenshots
-*Add screenshots of your application here*
-
 ## 🚀 Features
 
 ### 🛍️ Core E-commerce Features
